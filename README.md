@@ -56,6 +56,6 @@ Ferramentas e frameworks utilizadas para realizar a construção dos testes
 - Report Builder: Ferramenta para criar relatórios visuais dos testes.
 - RSpec: Framework para testes de assertividade.
 
-## ✒️ Autore
+## ✒️ Autor
 
 Lucas Borgato
