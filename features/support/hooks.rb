@@ -1,6 +1,7 @@
 require 'report_builder'
 require 'date'
 
+# Responsável por gerar o relatório
 at_exit do
   time = Time.now.to_s
   ReportBuilder.configure do |config|

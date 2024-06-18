@@ -1,3 +1,4 @@
+# Parametro para gerar relatório
 api:  -p pretty -p html_report -p json_report AMBIENTE="qa"
 
 pretty: --format pretty
