@@ -1,0 +1,282 @@
+[
+  {
+    "id": "estabelecimento-randomico",
+    "uri": "features/specs/enumerations_vrpat.feature",
+    "keyword": "Funcionalidade",
+    "name": "Estabelecimento Randomico",
+    "description": "",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@vr_api",
+        "line": 3
+      }
+    ],
+    "elements": [
+      {
+        "id": "estabelecimento-randomico;buscar-estabelecimento-válido;;2",
+        "keyword": "Esquema do Cenario",
+        "name": "Buscar Estabelecimento Válido",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu realize um get na api VRPAT, valide a chave \"typeOfEstablishment\", e retorne aleatoriamente um estabelecimento",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/enumerations_vrpat_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 207399200
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "retorna o código \"200\" com sucesso",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@vr_api",
+            "line": 3
+          },
+          {
+            "name": "@get_valido",
+            "line": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "remover-texto-após-marcadores",
+    "uri": "features/specs/remove_textos.feature",
+    "keyword": "Funcionalidade",
+    "name": "Remover texto após marcadores",
+    "description": "",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@vr_remover_textos",
+        "line": 3
+      }
+    ],
+    "elements": [
+      {
+        "id": "remover-texto-após-marcadores;remover-texto-após-os-marcadores-especificados;;2",
+        "keyword": "Esquema do Cenario",
+        "name": "Remover texto após os marcadores especificados",
+        "description": "",
+        "line": 16,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que tenha a string de entrada \"bananas, tomates # e ventiladores\"",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22600
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "os marcadores \"#,!\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11400
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "remover o texto após os marcadores",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17800
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a saída esperada é \"bananas, tomates\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@vr_remover_textos",
+            "line": 3
+          },
+          {
+            "name": "@remove_textos",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "id": "remover-texto-após-marcadores;remover-texto-após-os-marcadores-especificados;;3",
+        "keyword": "Esquema do Cenario",
+        "name": "Remover texto após os marcadores especificados",
+        "description": "",
+        "line": 17,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que tenha a string de entrada \"o rato roeu a roupa $ do rei % de roma\"",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17200
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "os marcadores \"%,!\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6700
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "remover o texto após os marcadores",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14700
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a saída esperada é \"o rato roeu a roupa $ do rei\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@vr_remover_textos",
+            "line": 3
+          },
+          {
+            "name": "@remove_textos",
+            "line": 7
+          }
+        ]
+      },
+      {
+        "id": "remover-texto-após-marcadores;remover-texto-após-os-marcadores-especificados;;4",
+        "keyword": "Esquema do Cenario",
+        "name": "Remover texto após os marcadores especificados",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que tenha a string de entrada \"the quick brown fox & jumped over * the lazy dog\"",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12300
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "os marcadores \"&,*,%,!\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8500
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "remover o texto após os marcadores",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8600
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a saída esperada é \"the quick brown fox\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/remove_textos_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@vr_remover_textos",
+            "line": 3
+          },
+          {
+            "name": "@remove_textos",
+            "line": 7
+          }
+        ]
+      }
+    ]
+  }
+]
